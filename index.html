@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML</title>
+        <link rel="stylesheet" href="src\main.css">
+        <link rel="stylesheet" href="src\modal.css">
+    </head>
+    <body> 
+        <div class=header>
+            <h3>Меню</h3>
+            <ul class=ul_menu>
+                <li class="active">Главная</li>
+                <li>Магазин</li>
+                <li>Серверы</li>
+                <li>Донат</li>
+				<li>Правила</li>
+            </ul>
+        </div>
+                    <!-- Модальное окно -->
+                    <div id="myModal" class="modal">
+                            <!-- Модальное содержание -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="reg_form">
+                                            <h2>Форма регистрации</h2>
+                                            <form action="#">
+                                                <input type="text" name="name" id="name" value="" placeholder="Введите логин"><br>
+                                                <input type="text" name="password" id="password" value="" placeholder="Введите пароль"><br>
+                                                <input type="text" name="password_verify" id="password_verify" value="" placeholder="Повторите пароль"><br>
+                                                <input type="text" name="mail" id="mail" value="" placeholder="Ваш E-mail"><br>
+                                                <input type="submit" value="Отправить" id="closemodal">
+                                            </form>
+                                        </div>
+                                </div>
+                        </div>
+
+        <div class="info">
+            <h1>Информация о игровом проекте</h1>
+            <div>
+                <p>На нашем проекте вы можете выбрать сервер для игры!</p>
+                 <!-- Триггер/Открыть модальный -->
+                <button id="myBtn">Начать игру</button>
+                <p>Информация о наших серверах:</p>
+            </div>
+
+        <br></br>
+
+
+			<table class="centerTable" border="1">
+				<tr>
+					<td>IP Сервера</td>
+					<td>Название сервера</td>
+					<td>Количество игроков</td>
+					<td>Текущая карта</td>
+				</tr>
+				<tr>
+					<td>46.174.52.181:27015</td>
+					<td> | Church Public |</td>
+					<td>17/20</td>
+					<td>Unknown</td>
+				</tr>
+				<tr>
+					<td>37.230.162.85:27015</td>
+					<td> | Church Public №2 |</td>
+					<td>Offline</td>
+					<td>Unknown</td>
+				</tr>
+			</table>
+        </div>
+
+
+<script src="src/index.js"></script>
+</body>
